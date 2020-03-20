@@ -60,8 +60,8 @@ export class PersonalizationComponent {
                             "title":this.translation.translate("Languages"),
                             "imgSrc":"foreign_language",
                            },
-                           {
-                            "title":CHANGE_PASSWORD,
+                           { // TODO: Add internationalization string
+                            "title":this.translation.translate(CHANGE_PASSWORD),
                             "imgSrc":"password"
                            },
                           /*  {

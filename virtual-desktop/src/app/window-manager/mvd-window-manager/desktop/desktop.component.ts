@@ -59,6 +59,7 @@ constructor(
         this.hidePersonalizationPanel();
         break;
       case LoginScreenChangeReason.PasswordChangeSuccess:
+        //TODO: Needs internationalization
         const notifTitle = "Account Password";
         const notifMessage = "Password was successfully changed."
         const desktopPluginId = ZoweZLUX.pluginManager.getDesktopPlugin().getIdentifier();

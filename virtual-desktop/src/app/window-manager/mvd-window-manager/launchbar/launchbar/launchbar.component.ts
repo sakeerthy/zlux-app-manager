@@ -21,6 +21,8 @@ import { PluginsDataService } from '../../services/plugins-data.service';
 import { TranslationService } from 'angular-l10n';
 import { generateInstanceActions } from '../shared/context-utils';
 
+//const SYSTEM_APPS = ['org.zowe.zlux.ng2desktop.settings', 'org.zowe.zlux.ng2desktop.password-reset']
+
 @Component({
   selector: 'rs-com-launchbar',
   templateUrl: './launchbar.component.html',
