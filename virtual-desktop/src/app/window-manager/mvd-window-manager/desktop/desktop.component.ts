@@ -59,9 +59,13 @@ constructor(
         this.hidePersonalizationPanel();
         break;
       case LoginScreenChangeReason.PasswordChangeSuccess:
+        const notifTitle = "Account Password";
+        const notifMessage = "Password was successfully changed."
+        const desktopPluginId = ZoweZLUX.pluginManager.getDesktopPlugin().getIdentifier();
         this.changePassword = false;
         this.hidePersonalizationPanel();
         this.showPreviouslyVisibleApplications();
+        ZoweZLUX.notificationManager.notify(ZoweZLUX.notificationManager.createNotification(notifTitle, notifMessage, 1, desktopPluginId));
         break;
       case LoginScreenChangeReason.HidePasswordChange:
         this.changePassword = false;
